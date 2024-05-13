@@ -1,0 +1,16 @@
+- Tích hợp keycloak với microservice spring boot: https://www.youtube.com/watch?v=KpITcN7O53Y
+
+- Chạy keycloak trên docker:
+    + docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:24.0.4 start-dev
+    + Chạy http://localhost:8080 đăng nhập với username-password: admin-admin
+
+- Cấu hình keycloak
+    + realm name: sso-mobifone
+    + client id: TTCNTT-SMARTOFFICE
+    + client secret: KAhr9tsFUwiFFil1iinWtaQN7UkM3J0S
+    + issuer_uri: http://localhost:8080/realms/sso-mobifone
+    + jwks_uri: http://localhost:8080/realms/sso-mobifone/protocol/openid-connect/certs
+    + token_endpoint: http://localhost:8080/realms/sso-mobifone/protocol/openid-connect/token
+
+    + account admin: cuong.lemanh - 123456
+    + account user: user - 123456
