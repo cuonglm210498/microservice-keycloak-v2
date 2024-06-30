@@ -4,13 +4,6 @@ server:
 spring:
   application:
     name: API-GATEWAY
-  cloud:
-    gateway:
-      routes:
-        - id: USER-SERVICE
-          uri: http://localhost:8081
-          predicates:
-            - Path=/api/v1/users/**
   security:
     oauth2:
       resourceserver:

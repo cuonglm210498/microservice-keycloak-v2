@@ -25,6 +25,7 @@
         <module>registry-server</module>
         <module>gateway</module>
         <module>user-service</module>
+        <module>department-service</module>
     </modules>
 
 </project>
